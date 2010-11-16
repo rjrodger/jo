@@ -99,6 +99,21 @@ joView.prototype = {
 		return this;
 	},
 	
+        addCSSClass: function(classname) {
+		joDOM.addCSSClass(this.container, classname);
+		return this;
+	},
+
+	removeCSSClass: function(classname) {
+		joDOM.removeCSSClass(this.container, classname);
+		return this;
+	},
+
+	toggleCSSClass: function(classname) {
+		joDOM.toggleCSSClass(this.container, classname);
+		return this;
+	},
+
 	attach: function(parent) {
 		if (!this.container)
 			return this;
